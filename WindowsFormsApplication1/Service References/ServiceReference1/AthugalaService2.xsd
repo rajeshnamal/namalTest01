@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/LoanSystemApp.Class" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/LoanSystemApp.Class" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="clsLoan">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CardNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustomerID" type="xs:int" />
+      <xs:element minOccurs="0" name="CustomerName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Duration" type="xs:int" />
+      <xs:element minOccurs="0" name="DurationType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GrandLoanAmount" type="xs:double" />
+      <xs:element minOccurs="0" name="Interest" type="xs:float" />
+      <xs:element minOccurs="0" name="LoanAmount" type="xs:double" />
+      <xs:element minOccurs="0" name="LoanCompleteYN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LoanDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LoanID" type="xs:int" />
+      <xs:element minOccurs="0" name="LoanNo" type="xs:int" />
+      <xs:element minOccurs="0" name="NoOfDays" type="xs:int" />
+      <xs:element minOccurs="0" name="UserID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="clsLoan" nillable="true" type="tns:clsLoan" />
+</xs:schema>
